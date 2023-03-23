@@ -1,0 +1,48 @@
+<h1 class="pt-5">Formulario Ingreso</h1>
+<hr>
+
+<div class="row">
+    <label for="id" class="form-label">ID</label>
+    <input [(ngModel)]="operacion.Id" type="text" id="id" class="form-control" autocomplete="false">
+    
+    <label for="ContactoBodega" class="form-label">Contacto Bodega</label>
+    <input [(ngModel)]="operacion.ContactoBodega" type="text" id="ContactoBodega" class="form-control" autocomplete="false">
+    
+    <label for="DireccionBodega" class="form-label">Dirección Bodega</label>
+    <input [(ngModel)]="operacion.DireccionBodega" type="text" id="DireccionBodega" class="form-control" autocomplete="false">
+    
+    <label for="FechaRetiro" class="form-label">Fecha Retiro</label>
+    <input [(ngModel)]="operacion.FechaRetiro" type="date" id="FechaRetiro" class="form-control" autocomplete="false">
+    
+    <label for="NumeroContenedor" class="form-label">Numero Contenedor</label>
+    <input [(ngModel)]="operacion.NumeroContenedor" type="text" id="NumeroContenedor" class="form-control" autocomplete="false">
+    
+    <label for="PesoContenedor" class="form-label">Peso Contenedor</label>
+    <input [(ngModel)]="operacion.PesoContenedor" type="text" id="PesoContenedor" class="form-control" autocomplete="false">
+    
+    <label for="VolumenCarga" class="form-label">Volumen Carga</label>
+    <input [(ngModel)]="operacion.VolumenCarga" type="text" id="VolumenCarga" class="form-control" autocomplete="false">
+    
+  </div>
+
+
+<h1 class="pt-5">Carga</h1>
+
+<div class="row pb-5">
+    <label for="Id" class="form-label">Id</label>
+    <input [(ngModel)]="operacion.Carga[0].Id" type="text" id="Id" class="form-control" autocomplete="false">
+    
+    
+    <label for="NumeroCarga" class="form-label">Numero Carga</label>
+    <input  [(ngModel)]="operacion.Carga[0].NumeroCarga" type="text" id="NumeroCarga" class="form-control" autocomplete="false">
+    
+    <label for="ValorCarga" class="form-label">Valor Carga</label>
+    <input  [(ngModel)]="operacion.Carga[0].ValorCarga" type="text" id="ValorCarga" class="form-control" autocomplete="false">
+</div>
+
+
+<div class="row pt-5 pb-5">
+    <button class="btn btn-primary" (click)="ingresarOperacion()">Ingresar</button>
+</div>
+
+
